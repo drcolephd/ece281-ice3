@@ -1,0 +1,84 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Feb 15 20:48:13 2024
+# Process ID: 328
+# Current directory: C:/Users/C27Brandon.Sweitzer/code/ece281-ice3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7148 C:\Users\C27Brandon.Sweitzer\code\ece281-ice3\fullAdder.xpr
+# Log file: C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/vivado.log
+# Journal file: C:/Users/C27Brandon.Sweitzer/code/ece281-ice3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/fullAdder.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'halfAdder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj halfAdder_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/src/hdl/halfAdder_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity halfAdder_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_basys3_tb
+ERROR: [VRFC 10-1412] syntax error near ) [C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/src/hdl/top_basys3_tb.vhd:63]
+ERROR: [VRFC 10-77] top_basys3 is not a type [C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/src/hdl/top_basys3_tb.vhd:75]
+ERROR: [VRFC 10-91] w_sw is not declared [C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/src/hdl/top_basys3_tb.vhd:85]
+ERROR: [VRFC 10-1412] syntax error near wait [C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/src/hdl/top_basys3_tb.vhd:85]
+ERROR: [VRFC 10-1471] type error near ns ; current type time; expected type  void [C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/src/hdl/top_basys3_tb.vhd:85]
+ERROR: [VRFC 10-91] w_led is not declared [C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/src/hdl/top_basys3_tb.vhd:86]
+ERROR: [VRFC 10-91] w_sw is not declared [C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/src/hdl/top_basys3_tb.vhd:87]
+ERROR: [VRFC 10-1412] syntax error near wait [C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/src/hdl/top_basys3_tb.vhd:87]
+ERROR: [VRFC 10-1471] type error near ns ; current type time; expected type  void [C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/src/hdl/top_basys3_tb.vhd:87]
+ERROR: [VRFC 10-91] w_led is not declared [C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/src/hdl/top_basys3_tb.vhd:88]
+ERROR: [VRFC 10-1412] syntax error near wait [C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/src/hdl/top_basys3_tb.vhd:91]
+INFO: [VRFC 10-240] VHDL file C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/src/hdl/top_basys3_tb.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'halfAdder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj halfAdder_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/src/hdl/halfAdder_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity halfAdder_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_basys3_tb
+ERROR: [VRFC 10-91] w_led is not declared [C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/src/hdl/top_basys3_tb.vhd:104]
+ERROR: [VRFC 10-91] w_led is not declared [C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/src/hdl/top_basys3_tb.vhd:106]
+ERROR: [VRFC 10-91] w_led is not declared [C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/src/hdl/top_basys3_tb.vhd:108]
+ERROR: [VRFC 10-91] w_led is not declared [C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/src/hdl/top_basys3_tb.vhd:110]
+ERROR: [VRFC 10-91] w_led is not declared [C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/src/hdl/top_basys3_tb.vhd:112]
+ERROR: [VRFC 10-91] w_led is not declared [C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/src/hdl/top_basys3_tb.vhd:114]
+ERROR: [VRFC 10-91] w_led is not declared [C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/src/hdl/top_basys3_tb.vhd:116]
+ERROR: [VRFC 10-91] w_led is not declared [C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/src/hdl/top_basys3_tb.vhd:118]
+ERROR: [VRFC 10-1504] unit test_bench ignored due to previous errors [C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/src/hdl/top_basys3_tb.vhd:57]
+INFO: [VRFC 10-240] VHDL file C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/src/hdl/top_basys3_tb.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property top top_basys3_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property top halfAdder_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property top top_basys3_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 15 23:14:04 2024...

@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Feb 29 22:32:36 2024
+# Process ID: 21052
+# Current directory: C:/Users/C27Brandon.Sweitzer/code/ece281-ice3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3148 C:\Users\C27Brandon.Sweitzer\code\ece281-ice3\fullAdder.xpr
+# Log file: C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/vivado.log
+# Journal file: C:/Users/C27Brandon.Sweitzer/code/ece281-ice3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/C27Brandon.Sweitzer/code/ece281-ice3/fullAdder.xpr
+launch_simulation
+source top_basys3_tb.tcl
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_basys3 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+run 70 ns
+run 70 ns
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_sim
+close_project
+open_project C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source sevenSegDecoder_tb.tcl
+run 160 ns
+run 160 ns
+close_sim
+launch_simulation
+source sevenSegDecoder_tb.tcl
+export_ip_user_files -of_objects  [get_files C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.srcs/sim_1/new/top_basys3_tb.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.srcs/sim_1/new/top_basys3_tb.vhd
+close_sim
+launch_simulation
+source sevenSegDecoder_tb.tcl
+run 160 ns
+run 150 ns
+run 150 ns
+run 150 ns
+relaunch_sim
+synth_design -rtl -name rtl_1
+save_wave_config {C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/sevenSegDecoder_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/sevenSegDecoder_tb_behav.wcfg
+set_property xsim.view C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/sevenSegDecoder_tb_behav.wcfg [get_filesets sim_1]
+close_sim
